@@ -1,7 +1,19 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+input, select, legend {
+    align-self: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
 label {
     display: block;
 }
 
-input {
-    align-self: center;
+input.radio-label {
+    vertical-align: middle;
 }
+

@@ -10,9 +10,22 @@
     <h1 id="title">FreeCodeCamp Survey Form</h1>
     <p id="description">Thank you for taking the time to help us improve the platform</p>
     <form id="survey-form">
-        <label for="name">Name: <input id="name" type="text" placeholder="Enter your name" required></label>
-        <label for="email">Email: <input id="email" type="email" placeholder="Enter your email" required></label>
-        <label for="age">Age: <input id="age" type="number" placeholder="Enter your age" required></label>
+        <label for="name-label">Name <input class="text-label" id="name" type="text" placeholder="Enter your name" required></label>
+        <label for="email-label">Email <input class="text-label" id="email" type="email" placeholder="Enter your email" required></label>
+        <label for="age-label">Age <input class="text-label" id="age" type="select" placeholder="Enter your age" min="18" max="120" required></label>        
+        <label for="select-label">Select your current role 
+            <select name="curr_role" id="curr_role">
+                <option value="0" selected disabled>Select role </option>
+                <option value="1">Student</option>
+                <option value="2">Full Time Job</option>
+                <option value="3">Prefer not to say</option>
+                <option value="4">Other</option>
+            </select>
+        </label>
+        <legend>Would you recommend FreeCodeCamp to a friend?</legend>
+        <label for="yes"><input class="radio-label" name="recommendation" type="radio" id="yes" value="yes" checked>Yes</label>
+        <label for="maybe"><input class="radio-label" name="recommendation" type="radio" id="maybe" value="maybe" >Maybe</label>
+        <label for="no"><input class="radio-label" name="recommendation" type="radio" id="no" value="no" >No</label>
     </form>
 </body>
 </html>
