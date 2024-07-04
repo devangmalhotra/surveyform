@@ -10,11 +10,11 @@
     <h1 id="title">FreeCodeCamp Survey Form</h1>
     <p id="description">Thank you for taking the time to help us improve the platform</p>
     <form id="survey-form">
-        <label for="name-label">Name <input class="text-label" id="name" type="text" placeholder="Enter your name" required></label>
-        <label for="email-label">Email <input class="text-label" id="email" type="email" placeholder="Enter your email" required></label>
-        <label for="age-label">Age <input class="text-label" id="age" type="select" placeholder="Enter your age" min="18" max="120" required></label>        
+        <label for="name-label" id="name-label">Name <input class="text-label" id="name" type="text" placeholder="Enter your name" required></label>
+        <label for="email-label" id="email-label">Email <input class="text-label" id="email" type="email" placeholder="Enter your email" required></label>
+        <label for="number-label" id="number-label">Age <input class="text-label" id="number" type="number" placeholder="Enter your age" min="18" max="120" required></label>        
         <label for="select-label">Select your current role 
-            <select name="curr_role" id="curr_role">
+            <select name="dropdown" id="dropdown">
                 <option value="0" selected disabled>Select role </option>
                 <option value="1">Student</option>
                 <option value="2">Full Time Job</option>
@@ -26,6 +26,15 @@
         <label for="yes"><input class="radio-label" name="recommendation" type="radio" id="yes" value="yes" checked>Yes</label>
         <label for="maybe"><input class="radio-label" name="recommendation" type="radio" id="maybe" value="maybe" >Maybe</label>
         <label for="no"><input class="radio-label" name="recommendation" type="radio" id="no" value="no" >No</label>
+        <legend>Which areas did you find the most helpful? (Select all that apply)</legend>
+        <label for="videos"><input id="videos" name="videos" class="checkbox-button" type="checkbox" value="videos">Videos</label>
+        <label for="wiki"><input id="wiki" name="wiki" class="checkbox-button" type="checkbox" value="wiki">Wiki</label>
+        <label for="forum"><input id="forum" name="forum" class="checkbox-button" type="checkbox" value="forum">Forum</label>
+        <label for="challenges"><input id="challenges" name="challenges" class="checkbox-button" type="checkbox" value="challenges">Challenges</label>
+        <label for="projects"><input id="projects" name="projects" class="checkbox-button" type="checkbox" value="projects">Projects (front-end and back-end)</label>
+        <legend>Any additional comments?</legend>
+        <textarea name="comments" id="comments" cols="40" rows="10"></textarea>
+        <input id="submit" type="submit" value="Submit">
     </form>
 </body>
 </html>
